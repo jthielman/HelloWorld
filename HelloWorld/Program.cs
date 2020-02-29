@@ -62,6 +62,11 @@ namespace HelloWorld
                 }
             }
 
+            Console.WriteLine("What's your favorite color?");
+            var favColor = Console.ReadLine();
+            var randomNumber = new Random().Next(0, animals.Length);
+            Console.WriteLine($"Would you like to have a {animals[randomNumber].ToLower()} that is {favColor}?");
+
             Console.ReadLine();
         }
     }
