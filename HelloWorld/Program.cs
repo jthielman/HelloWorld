@@ -26,7 +26,11 @@ namespace HelloWorld
                     Console.WriteLine("Howdy, y'all!");
                     break;
             }
-                //Console.ReadKey(); // What happens if you run the app without this line?
+            //Console.ReadKey(); // What happens if you run the app without this line?
+
+            Console.WriteLine("What is your name?");
+            var name = Console.ReadLine();
+            Console.WriteLine($"Hello, {name}!");
 
             var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan", "Dog", "Snake" };
             var vowels = new[] { 'a', 'e', 'i', 'o', 'u', 'y' };
